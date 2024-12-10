@@ -20,7 +20,6 @@ html{
     justify-content: space-between;
     align-items:center;
     padding-right: 10px;
-
 }
 .navbar .logo {
     font-size: 2em;
@@ -40,7 +39,9 @@ html{
 .hero {
     text-align: center;
     padding: 4em 1em;
-    background: #0077B6;
+    background-image: url(Xtreme.png);
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 .hero h1 {
@@ -50,11 +51,16 @@ html{
     display: inline-block;
     margin-top: 1em;
     padding: 0.5em 1em;
-    background: white;
-    color: #007BFF;
+    background: #8c00ff;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 40px;
+}
+.hero .container {
+    background-color: #8c00ff54;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
 }
 
 /* Section Styles */
@@ -74,7 +80,7 @@ section {
     color: #fff;
     stroke: #000000;
     stroke-width: 5px;
-    background-image: url(Web.jpg);
+    background-image: url(GM.jpg);
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
