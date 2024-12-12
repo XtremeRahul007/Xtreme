@@ -6,30 +6,40 @@ body {
     line-height: 1.6;
     background: #f5f7fa;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /* Navbar */
 .navbar {
     background: #333;
     color: #fff;
     padding: 1em 0;
 }
+
 .navbar .container {
     display: flex;
-    justify-content: space-between;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     padding-right: 10px;
 }
+
 .navbar .logo {
     font-size: 2em;
     font-weight: bold;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+    padding-left: 10px;
 }
+
 .navbar .nav-links {
     list-style: none;
     display: flex;
     gap: 1em;
 }
+
 .navbar .nav-links a {
     color: #fff;
     text-decoration: none;
@@ -44,9 +54,11 @@ html{
     background-position: center;
     color: white;
 }
+
 .hero h1 {
     font-size: 2.5em;
 }
+
 .hero .btn {
     display: inline-block;
     margin-top: 1em;
@@ -57,6 +69,7 @@ html{
     font-weight: bold;
     border-radius: 40px;
 }
+
 .hero .container {
     background-color: #8c00ff54;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
@@ -67,9 +80,13 @@ html{
 section {
     padding: 2em 0;
 }
-.about, .services, .contact {
+
+.about,
+.services,
+.contact {
     text-align: center;
 }
+
 .services .card1 {
     display: inline-block;
     padding: 1em;
@@ -87,6 +104,7 @@ section {
     background-blend-mode: soft-light;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .services .card2 {
     display: inline-block;
     padding: 1em;
@@ -104,6 +122,7 @@ section {
     background-blend-mode: soft-light;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .services .card3 {
     display: inline-block;
     padding: 1em;
@@ -121,7 +140,8 @@ section {
     background-blend-mode: soft-light;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.contact form input, 
+
+.contact form input,
 .contact form textarea {
     width: 100%;
     margin: 0.5em 0;
@@ -129,6 +149,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .contact form .btn {
     background: #007BFF;
     color: white;
@@ -144,35 +165,56 @@ footer {
     background: #333;
     color: white;
 }
-.topbtndiv{
+
+.topbtndiv {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
-} 
-.topbtn{
+}
+
+.topbtn {
     display: inline-block;
     margin-top: 1em;
     padding: 0.5em 1em;
     background: #ccc;
-    color:#000;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
+
 .logo-frame {
-    width: 45px; /* Adjust the size */
-    height: 45px; /* Must match width for a perfect circle */
-    border: 1px solid #ccc; /* Border color and thickness */
-    border-radius: 50%; /* Makes it circular */
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensures the image doesn't overflow */
-    background-color: #fff; /* Optional: Background color of the frame */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .logo-frame img {
-    width: 100%; /* Adjust to fit within the frame */
-    height: auto; /* Maintain aspect ratio */
-  }
+    width: 100%;
+    height: auto;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}

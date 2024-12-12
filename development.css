@@ -139,7 +139,7 @@ html {
 
 .content {
     color: #000;
-    font: 0.8em sans-serif;
+    font: .8em sans-serif;
     margin: 0 auto;
     line-height: 1.5;
     text-align: justify;
@@ -148,12 +148,17 @@ html {
     justify-content:space-around;
     gap: 1em;
 }
+.content h3 {
+    font: bold;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
 
 .content img {
     width: 100%;
     max-width: 400px;
     height: auto;
     margin: 1em 0;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0,0.5);
 }
 
 footer {
@@ -207,4 +212,21 @@ footer {
     text-decoration: none;
     align-items: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
