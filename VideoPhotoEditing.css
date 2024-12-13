@@ -161,19 +161,49 @@ html {
     border-width: 2px;
     border-radius: 10px;
 }
+.section-3 h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    line-height: 1.5cap;
+}
 
 .content {
     color: #000;
-    font: 1.2em sans-serif;
+    font: 0.8 sans-serif;
     margin: 0 auto;
     line-height: 1.5;
     text-align: justify;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
     gap: 1em;
 }
 
+.content div{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.thumbnail {
+    width: 90%;
+    margin: 10px;
+    border: black 3px solid;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.app-logo {
+    height: 50px;
+    width: 50px;
+    border: #000;
+    border-radius: 10%;
+    display: flex;
+    justify-content: flex-start;
+}
 
 footer {
     background-color: #333;
@@ -182,4 +212,21 @@ footer {
     padding: 10px;
     margin-top: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
