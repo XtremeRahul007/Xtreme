@@ -1,5 +1,6 @@
-// Simple form handler
-document.querySelector('form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-});
+fetch('https://api.countapi.xyz/hit/xtremerahul007.github.io/Xtreme')
+    .then(response => response.json())
+    .then(data => {
+        console.log("Visit count:", data.value); // Optional for debugging
+        document.getElementById("visit-count").innerText = data.value;
+    });
