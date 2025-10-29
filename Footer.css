@@ -1,0 +1,78 @@
+footer {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: #fff 2px solid;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2), 0 0 20px rgba(255, 255, 255, .2), 0 0 30px rgba(255, 255, 255, .2), 0 0 40px rgba(255, 255, 255, .2), 0 0 50px rgba(255, 255, 255, .2), 0 0 60px rgba(255, 255, 255, .2), 0 0 70px rgba(255, 255, 255, .2);
+    font-family: 'Orbitron', sans-serif;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .footer-info {
+    flex: 1 1 300px;
+    text-align: left;
+}
+
+footer .footer-info p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+}
+
+footer .social-media {
+    flex: 1 1 300px;
+    text-align: right;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    padding: 0.2rem 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer .social-media a:hover,
+footer .social-media a:focus {
+    color: #00bfff;
+}
+
+footer .social-media a .social-icon {
+    width: 20px;
+    height: 20px;
+    transition: filter 0.3s ease-in-out;
+}
+
+footer .social-media a:hover .social-icon,
+footer .social-media a:focus .social-icon {
+    filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+@media (max-width: 600px) {
+    footer .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .footer-info,
+    footer .social-media {
+        text-align: center;
+        flex: 1 1 100%;
+    }
+    footer .social-media a {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
