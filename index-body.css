@@ -87,7 +87,7 @@ main {
     line-height: 1.5;
     font-weight: 900;
     color: #000;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.2), 0 0 7px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.2);
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.2), 0 0 7px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.2); */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #242424;
 }
@@ -104,14 +104,14 @@ main {
         line-height: 1.5;
         font-weight: 900;
         color: #242424;
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.2), 0 0 7px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.2);
+        /*text-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.2), 0 0 7px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.2);*/
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #242424;
     }
 
     to {
         color: #fff;
-        text-shadow: 0 0 2px rgba(255, 255, 255, 0.1), 0 0 3px rgba(255, 255, 255, 0.1), 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px rgba(255, 255, 255, 0.1), 0 0 6px rgba(255, 255, 255, 0.1), 0 0 7px rgba(255, 255, 255, 0.1), 0 0 8px rgba(255, 255, 255, 0.1);
+        /* text-shadow: 0 0 2px rgba(255, 255, 255, 0.1), 0 0 3px rgba(255, 255, 255, 0.1), 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px rgba(255, 255, 255, 0.1), 0 0 6px rgba(255, 255, 255, 0.1), 0 0 7px rgba(255, 255, 255, 0.1), 0 0 8px rgba(255, 255, 255, 0.1);*/
     }
 }
 
@@ -285,4 +285,5 @@ main {
     color: #242424;
     box-shadow: 0 0 20px rgba(255, 255, 255, .5), 0 0 30px rgba(255, 255, 255, .5), 0 0 40px rgba(255, 255, 255, .5), 0 0 50px rgba(255, 255, 255, .5), 0 0 60px rgba(255, 255, 255, .5), 0 0 70px rgba(255, 255, 255, .5), 0 0 80px rgba(255, 255, 255, .5);
     transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out, color .3s ease-in-out;
+
 }
